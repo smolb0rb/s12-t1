@@ -24,9 +24,28 @@ main {
 }
 
 .offcanvas-top{
+    height: auto;
     height: fit-content;
 }
 
 .right {
     float: right;
+}
+
+.dropdown {
+    position: absolute;
+    right: 1rem;
+    bottom: 0.5rem;
+}
+
+.dropdown-menu {
+    position: absolute;
+}
+
+.hidden {
+    display: none;
+}
+
+.more-table tr td:nth-child(2) {
+    text-align: right;
 }

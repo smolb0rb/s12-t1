@@ -14,6 +14,55 @@
 
 <body class="bg-dark">
   <main>
+
+
+    <button id="toggleOffcanvasBtn" class="hidden" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"></button>
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div id="offcanvasBody"></div>
+        <hr>
+        <div>
+  
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </button>
+  
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <table class="text-muted more-table">
+                  <tr>
+                    <td>Year:</td>
+                    <td id="movYear"></td>
+                  </tr>
+                  <tr>
+                    <td>Runtime:</td>
+                    <td id="movRuntime"></td>
+                  </tr>
+                  <tr>
+                    <td>Budget:</td>
+                    <td id="movBudget"></td>
+                  </tr>
+                  <tr>
+                    <td>Revenue:</td>
+                    <td id="movRevenue"></td>
+                  </tr>
+                </table>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="text-muted" id="offcanvasFooter"></div>
+  
+        </div>
+      </div>
+    </div>
+
+
     <div class="text-center container">
       <div class="row py-lg-3">
         <div class="col-lg-6 col-md-8 mx-auto">
@@ -40,19 +89,6 @@
       <p class="mb-1">Generado con fines estrictamente educativos.</p>
     </div>
   </footer>
-
-  <button id="toggleOffcanvasBtn" class="hidden" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"></button>
-  <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasLabel"></h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <div id="offcanvasBody"></div>
-      <hr>
-      <div class="text-muted" id="offcanvasFooter"></div>
-    </div>
-  </div>
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/index.js"></script>

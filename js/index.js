@@ -73,5 +73,9 @@ function showMovData(i) {
     offcanvasLabel.textContent = mov.title;
     offcanvasBody.textContent = mov.overview;
     offcanvasFooter.textContent = mov.genres.map(g => g.name).join(" - ");
+    movYear.textContent = new Date(mov.release_date).getFullYear();
+    movRuntime.textContent = mov.runtime + " mins";
+    movBudget.textContent = "$" + mov.budget;
+    movRevenue.textContent = "$" + mov.revenue;
     toggleOffcanvasBtn.click();
 }
